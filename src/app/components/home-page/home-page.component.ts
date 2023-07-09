@@ -1,15 +1,15 @@
 import { Component } from "@angular/core";
-
-export interface Tile {
-   color: string;
-   cols: number;
-   rows: number;
-   text: string;
-}
+import { Subject } from "rxjs";
 
 @Component({
    selector: "app-home-page",
    templateUrl: "./home-page.component.html",
    styleUrls: ["./home-page.component.css"],
 })
-export class HomePageComponent {}
+export class HomePageComponent {
+   subject = new Subject<number>();
+
+   handleCapitulo = (capitulo: number) => {
+      this.subject.next(capitulo);
+   };
+}

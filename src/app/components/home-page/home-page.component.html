@@ -1,8 +1,18 @@
 <div class="container">
    <div fxLayout.gt-sm="row" fxLayout.lt-md="column">
-      <app-book-section fxFlex.gt-sm="25%" fxFlex.lt-md="25%" fxLayoutAlign="center none">
+      <app-book-section
+         (onCapitulo)="handleCapitulo($event)"
+         fxFlex.gt-sm="25%"
+         fxFlex.lt-md="25%"
+         fxLayoutAlign="center none"
+      >
       </app-book-section>
-      <app-book-content fxFlex.gt-sm="75%" fxFlex.lt-md="75%" fxLayoutAlign="center none">
+      <app-book-content
+         [subject]="subject"
+         fxFlex.gt-sm="75%"
+         fxFlex.lt-md="75%"
+         fxLayoutAlign="center none"
+      >
       </app-book-content>
    </div>
 </div>

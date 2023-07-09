@@ -5,25 +5,29 @@
    </mat-card-header>
    <mat-card-content>
       <mat-list>
-         <mat-list-item>Introducción</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(0)"> Introducción </a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>¿Qué podemos hacer?</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(1)">¿Qué podemos hacer?</a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>En el trabajo…</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(2)">En el trabajo…</a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>En ti…</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(3)">En ti…</a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>En casa…</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(4)">En casa…</a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>De compras…</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(5)">De compras…</a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>En Vacaciones…</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(6)">En Vacaciones…</a></mat-list-item>
          <mat-divider></mat-divider>
-         <mat-list-item>En el campo…/En todo momento…</mat-list-item>
+         <mat-list-item
+            ><a mat-button (click)="sendInfo(7)">En el campo…/En todo momento…</a></mat-list-item
+         >
          <mat-divider></mat-divider>
-         <mat-list-item>Residuos-para tener en cuenta…</mat-list-item>
+         <mat-list-item
+            ><a mat-button (click)="sendInfo(8)">Residuos-para tener en cuenta…</a></mat-list-item
+         >
          <mat-divider></mat-divider>
-         <mat-list-item>Reflexión y fuente</mat-list-item>
+         <mat-list-item><a mat-button (click)="sendInfo(9)">Reflexión y fuente</a></mat-list-item>
       </mat-list>
    </mat-card-content>
 </mat-card>

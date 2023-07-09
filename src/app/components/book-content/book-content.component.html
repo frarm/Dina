@@ -1,4 +1,4 @@
-<mat-card class="visible-card">
+<mat-card *ngIf="capitulos[0]">
    <mat-card-header>
       <mat-card-title>Introducción</mat-card-title>
    </mat-card-header>
@@ -47,20 +47,58 @@
          para el 2030. Causando la desaparición de la biodiversidad de la zona, incluyendo las
          plantas medicinales más usadas en el país.
       </p>
+      <p>
+         Nuestro planeta se está calentando progresivamente en los últimos 150 años como
+         consecuencia de la actividad industrial humana solo es puesto en duda por los grandes
+         responsables de que eso ocurra (poderosas industrias y los países que las acogen).
+      </p>
+      <p>
+         Ante las irrefutables pruebas de que el calentamiento global amenaza la vida en el planeta,
+         Naciones Unidas redactó el Convenio Marco de las Naciones Unidas Sobre el Cambio Climático
+         en 1992.
+      </p>
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[1]">
    <mat-card-header>
-      <mat-card-title>¿Qué podemos hacer?</mat-card-title>
+      <mat-card-title
+         >¿QUÉ PODEMOS HACER PARA AYUDAR A QUE LA SITUACIÓN MEJORE EN EL PLANETA?
+      </mat-card-title>
    </mat-card-header>
    <mat-card-content>
-      <p>This card indeterminates progress bar.</p>
-      <p>dasdad</p>
+      <p>
+         Mitigar el impacto del cambio climático no solo está en las manos de los líderes mundiales,
+         sino también en la de los ciudadanos. Más allá de las grandes políticas que en la COP20
+         discutan los líderes del mundo para reducir el calentamiento global,
+         <strong>
+            los ciudadanos también tenemos en nuestras manos la oportunidad de contrarrestar el
+            cambio climático </strong
+         >.
+      </p>
+      <p>
+         Las acciones que realizamos día a día, forzosamente, tienen un impacto en el medio
+         ambiente. Si bien el ser humano tiene cierta resistencia al “cambio”, en los tiempos
+         actuales no podemos sino entender que nuestra forma de vida como hoy la conocemos no es
+         óptima, no sólo para la Tierra, incluso para nosotros. Esa condición incluye ya a Perú.
+         Cada uno de nosotros, desde nuestras casas, trabajos, escuelas, debemos estar más atentos a
+         nuestros patrones de consumo, acciones y actividades y así podremos generar el cambio que
+         necesitamos para vivir mejor.
+      </p>
+      <p>
+         Hagamos unos cuantos cambios simples. Pequeñas acciones pueden hacer grandes cambios,
+         especialmente cuando se trata del ambiente.
+      </p>
+      <p>
+         <strong>
+            Te ofrezco una serie de tips ecológicos que pueden ayudar a reducir el impacto que
+            tienen sobre el planeta los hábitos de consumo y comportamiento diario.
+         </strong>
+      </p>
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[2]">
    <mat-card-header>
       <mat-card-title>En el trabajo…</mat-card-title>
    </mat-card-header>
@@ -70,7 +108,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[3]">
    <mat-card-header>
       <mat-card-title>En ti…</mat-card-title>
    </mat-card-header>
@@ -80,7 +118,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[4]">
    <mat-card-header>
       <mat-card-title>En casa…</mat-card-title>
    </mat-card-header>
@@ -90,7 +128,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[5]">
    <mat-card-header>
       <mat-card-title>De compras…</mat-card-title>
    </mat-card-header>
@@ -100,7 +138,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[6]">
    <mat-card-header>
       <mat-card-title>En Vacaciones…</mat-card-title>
    </mat-card-header>
@@ -110,7 +148,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[7]">
    <mat-card-header>
       <mat-card-title>En el campo…/En todo momento…</mat-card-title>
    </mat-card-header>
@@ -120,7 +158,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[8]">
    <mat-card-header>
       <mat-card-title>Residuos-para tener en cuenta…</mat-card-title>
    </mat-card-header>
@@ -130,7 +168,7 @@
    </mat-card-content>
 </mat-card>
 
-<mat-card class="hidden-card">
+<mat-card *ngIf="capitulos[9]">
    <mat-card-header>
       <mat-card-title>Reflexión y fuente</mat-card-title>
    </mat-card-header>
