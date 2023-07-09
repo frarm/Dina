@@ -1,0 +1,17 @@
+:host {
+   padding-left: 50px;
+   display: flex;
+   background-color: #070c16;
+}
+p {
+   font-size: 13px;
+}
+.address a {
+   color: #fff;
+}
+.logoFooter {
+   display: flex;
+   padding: 20px;
+   color: #f9f8f4;
+   align-items: center;
+}
