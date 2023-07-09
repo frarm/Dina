@@ -1,10 +1,8 @@
-<mat-grid-list cols="4" rowHeight="100px">
-   <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color"
-   >
-      {{ tile.text }}
-   </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+   <div fxLayout.gt-sm="row" fxLayout.lt-md="column">
+      <app-book-section fxFlex.gt-sm="25%" fxFlex.lt-md="25%" fxLayoutAlign="center none">
+      </app-book-section>
+      <app-book-content fxFlex.gt-sm="75%" fxFlex.lt-md="75%" fxLayoutAlign="center none">
+      </app-book-content>
+   </div>
+</div>

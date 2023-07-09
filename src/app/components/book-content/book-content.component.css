@@ -1,0 +1,6 @@
+.hidden-card {
+   display: none;
+}
+:host {
+   padding-right: 20px;
+}

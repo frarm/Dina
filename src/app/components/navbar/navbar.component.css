@@ -1,8 +1,11 @@
-:host {
+#main-toolbar {
    position: fixed;
    top: 0px;
    width: 100%;
    z-index: 100;
+}
+#others-toolbar {
+   margin-top: 64px;
 }
 .menu-spacer {
    flex: 1 1 auto;
@@ -10,10 +13,16 @@
 #name {
    margin-inline: 25px;
 }
-#waicon {
+#wa-icon {
    transform: scale(0.93);
 }
 
+#menu-icon {
+   transform: scale(1.5);
+}
 mat-form-field.mat-form-field {
    font-size: 15px;
+}
+.mat-mdc-button > .mat-icon {
+   margin-right: 0px;
 }
